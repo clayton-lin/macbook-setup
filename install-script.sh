@@ -1,9 +1,13 @@
 #!/bin/bash
 
-echo script started
+echo --- Installation script started
+
+read -p "Name: " NAME
+read -p "Email: " EMAIL
 
 # install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+chmod u+x install-homebrew.sh
+./install-homebrew.sh $NAME $EMAIL
 
 # install chrome
 # install git
@@ -20,4 +24,4 @@ echo script started
 # install alfred
 # install karabeener
 
-echo installations completed
+echo --- All installations completed
