@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo init main git script
+echo script started
+
+# install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install chrome
 # install git
@@ -17,4 +20,4 @@ echo init main git script
 # install alfred
 # install karabeener
 
-
+echo installations completed
