@@ -2,14 +2,17 @@
 
 echo --- Installation script started
 
-read -p "Name: " NAME
-read -p "Email: " EMAIL
+# read -p "Name: " NAME
+# read -p "Email: " EMAIL
 
-# install homebrew
-chmod u+x install-homebrew.sh
-./install-homebrew.sh $NAME $EMAIL
+# # install homebrew
+# chmod u+x install-homebrew.sh
+# ./install-homebrew.sh
 
 # install chrome
+chmod u+x install-google-chrome.sh
+./install-google-chrome.sh
+
 # install git
 # install vs code
 # install nvm
