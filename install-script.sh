@@ -2,18 +2,21 @@
 
 echo --- Installation script started
 
-# read -p "Name: " NAME
-# read -p "Email: " EMAIL
+read -p "Name: " NAME
+read -p "Email: " EMAIL
 
 # # install homebrew
 # chmod u+x install-homebrew.sh
 # ./install-homebrew.sh
 
-# install chrome
-chmod u+x install-google-chrome.sh
-./install-google-chrome.sh
+# # install chrome
+# chmod u+x install-google-chrome.sh
+# ./install-google-chrome.sh
 
-# install git
+# install git 
+chmod u+x install-git.sh
+./install-git.sh $NAME $EMAIL
+
 # install vs code
 # install nvm
 # install node using nvm
