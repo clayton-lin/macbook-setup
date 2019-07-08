@@ -2,20 +2,20 @@
 
 echo --- Installation script started
 
-read -p "Name: " NAME
-read -p "Email: " EMAIL
+# read -p "Name: " NAME
+# read -p "Email: " EMAIL
 
 # # install homebrew
-# chmod u+x install-homebrew.sh
-# ./install-homebrew.sh
+# chmod u+x scripts/install-homebrew.sh
+# ./scripts/install-homebrew.sh
 
-# # install chrome
-# chmod u+x install-google-chrome.sh
-# ./install-google-chrome.sh
+# install chrome
+chmod u+x scripts/install-google-chrome.sh
+./scripts/install-google-chrome.sh
 
-# install git 
-chmod u+x install-git.sh
-./install-git.sh $NAME $EMAIL
+# # install git 
+# chmod u+x scripts/install-git.sh
+# ./scripts/install-git.sh $NAME $EMAIL
 
 # install vs code
 # install nvm
@@ -29,5 +29,7 @@ chmod u+x install-git.sh
 # install spectacles
 # install alfred
 # install karabeener
+
+# set up bash profile
 
 echo --- All installations completed

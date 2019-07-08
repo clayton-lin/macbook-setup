@@ -11,7 +11,12 @@ echo --- Starting Google Chrome installation script
 echo --- Version\: $(/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version)
 
 
-# log into google profile
+# @TODO log into google profile
+# Master Preferences are pretty easy as a DMG deployment. From memory It's basically just two files.
+# Library/Google/Google Chrome Master Preferences << Text file in JSON format from memory.
+# Library/Google/Bookmarks << Optional If you want to import predetermined bookmarks.
+# https://www.jamf.com/jamf-nation/discussions/13947/configuring-google-chrome
+
 
 # open chrome extension pages for manual installation
 echo --- Chrome will now open multiple Chrome extension pages. Install all extensions before continuing.
@@ -36,7 +41,7 @@ EXT_INSTALLED=1
 
 while [ $EXT_INSTALLED = 1 ]
 do
-    read -p "??? Have all Chrome extensions been installed (y/N): " RESPONSE
+    read -p "--- Have all Chrome extensions been installed (y/N): " RESPONSE
     if [ $RESPONSE = "y" ] || [ $RESPONSE = "Y" ] || [ $RESPONSE = "yes" ] 
     then
         EXT_INSTALLED=0
@@ -44,6 +49,10 @@ do
         echo --- Install Chrome extensions before continuing
     fi
 done
+
+# @TODO configure chrome
+# https://www.chromium.org/administrators/configuring-other-preferences
+
 
 echo --- Google Chrome installation complete
 echo
