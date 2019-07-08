@@ -18,6 +18,9 @@ chmod u+x scripts/install-google-chrome.sh
 # ./scripts/install-git.sh $NAME $EMAIL
 
 # install vs code
+chmod u+x scripts/install-vs-code.sh
+./scripts/install-vs-code.sh
+
 # install nvm
 # install node using nvm
 # install spotify
